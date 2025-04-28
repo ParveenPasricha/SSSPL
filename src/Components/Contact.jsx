@@ -1,6 +1,6 @@
 import { FaPhoneAlt, FaMobileAlt, FaEnvelopeOpenText } from "react-icons/fa";
 import React from "react";
-import { FaGlobeAmericas, FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from "react-icons/fa"; // FaXTwitter hata diya, FaTwitter use kiya
+import { FaGlobeAmericas, FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -14,10 +14,8 @@ const Contact = () => {
           </h1>
 
           <div className="space-y-3 text-gray-700 text-lg">
-            <p><strong>Regd. Office:</strong> 739, Industrial Area, Phase - II, Chandigarh - 160 002</p>
-            <p><strong>Unit I:</strong> 739, Industrial Area, Phase - II, Chandigarh - 160 002</p>
-            <p><strong>Unit II:</strong> 481, Industrial Area, Phase - I, Panchkula - 134 113</p>
-            <p><strong>Fax:</strong> 91-172-2653299</p>
+            <p><strong>Unit I:</strong> 739, Industrial Area, Phase - II, Chandigarh - 160002</p>
+            <p><strong>Unit II:</strong> 481, Industrial Area, Phase - I, Panchkula - 134113</p>
           </div>
 
           <div className="flex gap-4 mt-6">
@@ -25,7 +23,7 @@ const Contact = () => {
             {[
               { icon: <FaFacebookF />, bg: 'bg-blue-600', link: 'https://facebook.com' },
               { icon: <FaInstagram />, bg: 'bg-pink-500', link: 'https://instagram.com' },
-              { icon: <FaTwitter />, bg: 'bg-black', link: 'https://twitter.com' },  // changed FaXTwitter -> FaTwitter
+              { icon: <FaTwitter />, bg: 'bg-black', link: 'https://twitter.com' },  
               { icon: <FaLinkedinIn />, bg: 'bg-blue-700', link: 'https://linkedin.com' },
               { icon: <FaYoutube />, bg: 'bg-red-600', link: 'https://youtube.com' }
             ].map((item, index) => (

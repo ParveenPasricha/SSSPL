@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const ImageSlider = () => {
   const images = [
-    'https://www.susolartech.com/images1/HH.png',
+    'https://www.susolartech.com/images1/jassa%20singh.png',
     'https://i.ytimg.com/vi/WHvM_Q8Ue9I/mqdefault.jpg',
     'https://www.susolartech.com/images1/15%20kw%20spp%20installed%20at%20sutlej%20public%20school,%20banga%20(pb)%20pic1.png',
   ];
