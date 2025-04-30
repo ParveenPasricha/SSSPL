@@ -10,6 +10,7 @@ import PhotoGallery from './Components/PhotoGallery';
 import Contact from './Components/Contact';
 import Inquiry from './Components/Inquiry';
 import Testimonial from './Components/Testimonial';
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
 
 
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 };
