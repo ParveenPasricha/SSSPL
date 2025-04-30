@@ -22,7 +22,7 @@ const Header = () => {
       {/* <Link className='bg-blue-600 text-white text-bold p-2' onClick={()=>{'/https://www.susolartech.com/'}}>Go to Old Version of Website</Link> */}
       <Link className='bg-blue-600 text-white text-bold p-2' to="https://www.susolartech.com">Go to Old Version Website</Link>
       <h1 className="text-center text-3xl md:text-5xl font-extrabold text-blue-700 mb-4 tracking-wide">
-        Welcome to <span className="text-blue-500">Su Solartech Systems (P) Ltd.</span>
+        <span className="text-blue-500">Su Solartech Systems (P) Ltd.</span>
         {/* <img className='w-full' src='https://www.susolartech.com/images/header.jpg'/> */}
       </h1>
       <p className="text-center text-lg md:text-xl text-gray-700 font-medium mb-6 leading-relaxed">
