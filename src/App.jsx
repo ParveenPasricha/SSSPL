@@ -9,6 +9,7 @@ import Clientele from './Components/Clientele';
 import PhotoGallery from './Components/PhotoGallery';
 import Contact from './Components/Contact';
 import Inquiry from './Components/Inquiry';
+import Testimonial from './Components/Testimonial';
 
 const App = () => {
   return (
@@ -23,6 +24,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/inquiry" element={<Inquiry />} />
         <Route path="/gallery" element={<PhotoGallery />} />
+        <Route path="/testimonial" element={<Testimonial />} />
+
 
       </Routes>
     </BrowserRouter>
