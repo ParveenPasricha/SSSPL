@@ -21,8 +21,8 @@ const Products = () => {
       id: 2,
       name: "Solartech Water Heating System",
       image:
-      "https://lh3.googleusercontent.com/p/AF1QipOyV1xoTF7BsTu_92F4RqthTEHaXo7Ks0dRVUBJ=s680-w680-h510-rw",
-        // "https://tiimg.tistatic.com/fp/1/003/591/solar-water-heaters-386.jpg",
+      // "https://scontent.fixc1-8.fna.fbcdn.net/v/t39.30808-6/461837628_8176958742353686_4024380202958365619_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=cBbhehrhMBsQ7kNvwEZWGwL&_nc_oc=Adl-d80W_bufQIYhppoghpSFeVYXTNJ0dQ00__473eKqxvknaGZe4uqab8eYwgvqpScRHuooyMD2XwevhErkrhyg&_nc_zt=23&_nc_ht=scontent.fixc1-8.fna&_nc_gid=GEXcAEps1SYWtV-XXVAr_w&oh=00_AfE0-hS0lNy5WLxroORkO-yCoFVhT1x2tLRN1ihtu2SNYA&oe=6818011E",
+      "https://scontent.fixc1-8.fna.fbcdn.net/v/t39.30808-6/457365786_7904061766310053_4180626802627625564_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=VSFNZQKguVYQ7kNvwEZEDv9&_nc_oc=AdlxujjLfPsa_zaW4_h9L0q3i2x46zH9hTmB22drPst4MCvr1r8fWfKcryWJ233R_9RZxzCWOgE166g-j40fXAiG&_nc_zt=23&_nc_ht=scontent.fixc1-8.fna&_nc_gid=69AP8J3Opt9IoUWyLgXdPA&oh=00_AfGxqozX_YHptNpuj9iOzQIx4vz8LDYkHna2kb9zmNG5gA&oe=68180702",
       description:
         "Customized solar solutions designed to deliver high performance and energy savings.",
     },
