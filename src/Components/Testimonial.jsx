@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Bars from 'react-loading-icons/dist/esm/components/bars';
 
 const Testimonial = () => {
+  // const [loading, setLoading] = useState(true);
+  
+  //   useEffect(() => {
+  //     const timer = setTimeout(() => {
+  //       setLoading(false);
+  //     }, 2000); 
+  
+  //     return () => clearTimeout(timer);
+  //   }, []);
   const videoIds = [
     "erVyIbY7b9s",
     "izwvjUlUagU",
@@ -12,6 +22,16 @@ const Testimonial = () => {
     "BPrm9QtEdrY",
   ];
 
+  // if (loading) {
+  //     return (
+  //       <div className="bg-gradient-to-tl from-pink-400 to-yellow-400 z-10">
+  //       <h1 className="text-4xl h-screen font-bold text-center">
+  //         <Bars className="" />
+  //       </h1>
+  //     </div>
+  //     );
+  //   }
+  
   return (
     <div className="p-4">
       <h1 className="font-bold text-center p-3 bg-blue-600 text-white rounded mb-6 w-full sm:w-fit mx-auto">
