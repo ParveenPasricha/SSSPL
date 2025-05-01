@@ -30,7 +30,7 @@ const Products = () => {
       id: 3,
       name: "Solartech stand alone led security",
       image:
-        "https://lh3.googleusercontent.com/p/AF1QipN7iqtRcIwkWs4BDk7QLIGG4gAiuD8yD6Vi1CHU=s680-w680-h510-rw",
+        "https://i.ibb.co/q3MxmhM9/123.jpg",
       description:
         "Tailored solar power plants that maximize energy production and reduce long-term energy costs.",
     },
@@ -46,7 +46,7 @@ const Products = () => {
       id: 5,
       name: "Solartech Hand Held Lantern/ Emergency Light",
       image:
-        "https://lh3.googleusercontent.com/p/AF1QipMwnu35WjK_eRW7CqnrQx1Ra25EJKQ3F9hqytlB=s680-w680-h510-rw",
+        "https://i.ibb.co/W4W7kJHm/Emergency-Light-II.jpg",
       description:
         "Customized solar solutions designed to deliver high performance and energy savings.",
     },
@@ -194,7 +194,7 @@ const Products = () => {
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-72 object-cover rounded-lg mb-4"
+              className="w-full h-72 object-contain rounded-lg mb-4 bg-gray-100"
             />
             <h3 className="text-xl font-semibold text-gray-800 mb-3">
               {product.name}
