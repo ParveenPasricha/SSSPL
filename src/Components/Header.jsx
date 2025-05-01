@@ -39,6 +39,7 @@ const Header = () => {
           >
             {label}
           </button>
+          
         ))}
       </nav>
     </header>

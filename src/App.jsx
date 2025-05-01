@@ -11,7 +11,7 @@ import Contact from './Components/Contact';
 import Inquiry from './Components/Inquiry';
 import Testimonial from './Components/Testimonial';
 import Footer from './Components/Footer';
-
+import NotFound from './Components/NotFound';
 const App = () => {
   return (
     <BrowserRouter>
@@ -26,8 +26,8 @@ const App = () => {
         <Route path="/inquiry" element={<Inquiry />} />
         <Route path="/gallery" element={<PhotoGallery />} />
         <Route path="/testimonial" element={<Testimonial />} />
-
-
+        <Route path="*" element={<NotFound />} />
+        
       </Routes>
       <Footer/>
     </BrowserRouter>
