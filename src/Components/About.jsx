@@ -1,8 +1,18 @@
 import React from 'react';
+import { Helmet } from "react-helmet";
 
 const About = () => {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12">
+    <div className="max-w-4xl mx-auto px-6 py-12" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
+      <Helmet>
+        <title>Solar Water Heating System - SSSPL</title>
+        <meta
+          name="description"
+          content="Efficient solar water heating systems designed for homes and businesses. SSSPL is an MNRE-approved, ISO-certified solar energy products manufacturer based in India."
+        />
+        <meta name="keywords" content="solar water heating, solar energy India, SSSPL, MNRE solar products, renewable energy solutions" />
+      </Helmet>
+
       <h1 className="text-4xl font-bold text-center text-blue-600 mb-6">Solar Energy Products Manufacturer</h1>
       
       <p className="text-lg text-gray-700 mb-6">

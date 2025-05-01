@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Bars from "react-loading-icons/dist/esm/components/bars";
 
 const Products = () => {
-  const [cart, setCart] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const addToCart = (product) => {
-    setCart([...cart, product]);
-  };
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000); 
 
-  // List of products
-  const products = [
+    return () => clearTimeout(timer);
+  }, []);
+
+const products = [
     {
       id: 1,
       name: "Solar Power Plant",
@@ -19,16 +23,15 @@ const Products = () => {
     },
     {
       id: 2,
-      name: "Solartech Water Heating System",
+      name: ["Solartech Water Heating System ", "FPC & ETC"],
       image:
-      // "https://scontent.fixc1-8.fna.fbcdn.net/v/t39.30808-6/461837628_8176958742353686_4024380202958365619_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=cBbhehrhMBsQ7kNvwEZWGwL&_nc_oc=Adl-d80W_bufQIYhppoghpSFeVYXTNJ0dQ00__473eKqxvknaGZe4uqab8eYwgvqpScRHuooyMD2XwevhErkrhyg&_nc_zt=23&_nc_ht=scontent.fixc1-8.fna&_nc_gid=GEXcAEps1SYWtV-XXVAr_w&oh=00_AfE0-hS0lNy5WLxroORkO-yCoFVhT1x2tLRN1ihtu2SNYA&oe=6818011E",
       "https://scontent.fixc1-8.fna.fbcdn.net/v/t39.30808-6/457365786_7904061766310053_4180626802627625564_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=VSFNZQKguVYQ7kNvwEZEDv9&_nc_oc=AdlxujjLfPsa_zaW4_h9L0q3i2x46zH9hTmB22drPst4MCvr1r8fWfKcryWJ233R_9RZxzCWOgE166g-j40fXAiG&_nc_zt=23&_nc_ht=scontent.fixc1-8.fna&_nc_gid=69AP8J3Opt9IoUWyLgXdPA&oh=00_AfGxqozX_YHptNpuj9iOzQIx4vz8LDYkHna2kb9zmNG5gA&oe=68180702",
       description:
         "Customized solar solutions designed to deliver high performance and energy savings.",
     },
     {
       id: 3,
-      name: "Solartech stand alone led security",
+      name: "Solartech LED Light ",
       image:
         "https://i.ibb.co/q3MxmhM9/123.jpg",
       description:
@@ -38,7 +41,7 @@ const Products = () => {
       id: 4,
       name: "Solartech Still",
       image:
-        "https://www.sofo-soler.mu/cdn/shop/products/solarwaterheater.jpg?v=1716035820",
+        "https://3.imimg.com/data3/AH/IB/MY-2045897/stills-500x500.jpg",
       description:
         "Affordable and reliable solar energy solutions for large-scale installations.",
     },
@@ -46,7 +49,7 @@ const Products = () => {
       id: 5,
       name: "Solartech Hand Held Lantern/ Emergency Light",
       image:
-        "https://i.ibb.co/W4W7kJHm/Emergency-Light-II.jpg",
+        "https://i.ibb.co/JjWz5pq8/unnamed-removebg-preview.png",
       description:
         "Customized solar solutions designed to deliver high performance and energy savings.",
     },
@@ -54,7 +57,7 @@ const Products = () => {
       id: 6,
       name: "Solartech Box Type Cookers & Dish Type Cookers",
       image:
-        "https://5.imimg.com/data5/SELLER/Default/2023/10/353816819/BH/FZ/AT/151783329/solar-box-cooker-500x500.jpg",
+        "https://i.ibb.co/G4WVPWXX/cooker-removebg-preview-2.png",
       description:
         "Customized solar solutions designed to deliver high performance and energy savings.",
     },
@@ -62,7 +65,7 @@ const Products = () => {
       id: 7,
       name: "Solartech Cabinet Drier",
       image:
-        "https://lh3.googleusercontent.com/p/AF1QipMCSYKVE9PUEhH8FCekwdmCOP7cNiQxBuJ7TA07=s680-w680-h510-rw",
+        "https://i.ibb.co/hx2Gbrjc/drier-removebg-preview.png",
       description:
         "Customized solar solutions designed to deliver high performance and energy savings.",
     },
@@ -162,6 +165,14 @@ const Products = () => {
     },
     {
       id: 20,
+      name: "Solartech Blinker Light",
+      image:
+        "https://i.ibb.co/67KSf3Qk/2022-04-14-removebg-preview.png",
+      description:
+        "Customized solar solutions designed to deliver high performance and energy savings.",
+    },
+    {
+      id: 21,
       name: "Solartech Wind Electric Generator & PV Wind Hybrid System",
       image:
         "https://image.made-in-china.com/2f0j00LSpTwFsClZbE/1kw-2kw-3kw-5kw-Wind-Solar-Home-Hybrid-System.webp",
@@ -169,7 +180,7 @@ const Products = () => {
         "Customized solar solutions designed to deliver high performance and energy savings.",
     },
     {
-      id: 21,
+      id: 22,
       name: "Solartech Systems Parts & Spares",
       image:
         "https://www.solarpartscomponents.com/wp-content/uploads/2018/06/Solar-Panel-Parts-Components-Accessories.jpg",
@@ -178,13 +189,22 @@ const Products = () => {
     },
   ];
 
+  if (loading) {
+    return (
+      <div className="bg-black z-10 w-full">
+      <h1 className="text-4xl h-screen font-bold">
+        <Bars className="w-full justify-center" />
+      </h1>
+    </div>
+    );
+  }
+
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-600 mb-8">
         Solar Products
       </h1>
 
-      {/* Grid for Products */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {products.map((product) => (
           <div
