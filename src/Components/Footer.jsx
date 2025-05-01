@@ -61,7 +61,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-tl from-purple-400 to-blue-100 text-black pt-16 pb-8">
+    <footer className="bg-blue-100 text-black pt-16 pb-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info + Social Icons */}
@@ -167,10 +167,10 @@ const Footer = () => {
                 { name: "Solar Water Heating",link: "/services/water-heating"},
                 { name: "Maintenance & Support", link: "/services/maintenance"},
               ].map((service) => (
-                <li key={service.name}>
+                <li key={service.name} className="flex flex-wrap gap-2">
                   <a
                     href={service.link}
-                    className="text-solar-100/80 hover:text-white transition-colors"
+                    className="cursor-pointer font-semibold px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transition-all duration-300 ease-in-out"
                   >
                     {service.name}
                   </a>
