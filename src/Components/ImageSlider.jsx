@@ -8,7 +8,7 @@ import { Helmet } from 'react-helmet';
 const PrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-l from-blue-800 bg-opacity-50 text-white p-3 rounded-full z-10"
+    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full z-10"
   >
     <img src='https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Red_Arrow_Head_Right-2-512.png' className='w-8 h-8 rotate-180' />
   </button>
@@ -17,7 +17,7 @@ const PrevArrow = ({ onClick }) => (
 const NextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute right-4 top-1/2 transform -translate-y-1/2  bg-gradient-to-r from-blue-600 bg-opacity-50 text-white p-3 rounded-full z-10"
+    className="absolute right-4 top-1/2 transform -translate-y-1/2  bg-black bg-opacity-50 text-white p-3 rounded-full z-10"
   >
     <img src='https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Red_Arrow_Head_Right-2-512.png' className='w-8 h-8 hover:none' />
   </button>
@@ -25,10 +25,11 @@ const NextArrow = ({ onClick }) => (
 
 const ImageSlider = () => {
   const images = [
-    "https://lh3.googleusercontent.com/p/AF1QipOFZaeM_CkthgD-BSrLqJBv4FiyyMZ4dKSy1Ea4=s680-w680-h510-rw",
-    "https://lh3.googleusercontent.com/p/AF1QipO7rPB6LaKjx0JaANpSQS7M83nl3LWRbAfHpaDQ=s680-w680-h510-rw",
-    "https://lh3.googleusercontent.com/p/AF1QipPI9XBBbhG_qceD47NEGv6rzBLVaP0NLu0B8_54=s680-w680-h510-rw",
+    "https://media.istockphoto.com/id/1252816967/photo/solar-panel-green-energy-efficiency-for-house-roof.jpg?s=612x612&w=0&k=20&c=-v5mQB2kBhSG-HqWtDWCCCyE46aKOKQ34P52zzam8wA=",
     'https://www.susolartech.com/images1/15%20kw%20spp%20installed%20at%20sutlej%20public%20school,%20banga%20(pb)%20pic1.png',
+    'https://media.istockphoto.com/id/2137937205/photo/indian-worker-installing-solar-panels-on-roof-of-house-maintenance-of-photovoltaic-panel.jpg?s=612x612&w=0&k=20&c=EqdLVCyE0Jqa0kfTvdAK0nxFyurBLmRcpuliphRosdw=',
+    'https://static.bangkokpost.com/media/content/20240504/c1_2786670_240504112129_700.jpg',
+    ''
   ];
 
   const settings = {
@@ -60,7 +61,7 @@ const ImageSlider = () => {
 
       <Slider {...settings}>
         {images.map((src, index) => (
-          <div key={index}>
+          <div key={index} className='p-20'>
             <img
               src={src}
               alt={`Slide ${index + 1}`}

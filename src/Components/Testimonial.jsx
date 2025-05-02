@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react';
 import Bars from 'react-loading-icons/dist/esm/components/bars';
 
 const Testimonial = () => {
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   
-  //   useEffect(() => {
-  //     const timer = setTimeout(() => {
-  //       setLoading(false);
-  //     }, 2000); 
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 2000); 
   
-  //     return () => clearTimeout(timer);
-  //   }, []);
+      return () => clearTimeout(timer);
+    }, []);
   const videoIds = [
     "erVyIbY7b9s",
     "izwvjUlUagU",
@@ -22,15 +22,15 @@ const Testimonial = () => {
     "BPrm9QtEdrY",
   ];
 
-  // if (loading) {
-  //     return (
-  //       <div className="bg-gradient-to-tl from-pink-400 to-yellow-400 z-10">
-  //       <h1 className="text-4xl h-screen font-bold text-center">
-  //         <Bars className="" />
-  //       </h1>
-  //     </div>
-  //     );
-  //   }
+ if (loading) {
+     return (
+       <div className="bg-black z-10 w-full">
+       <h1 className="text-4xl h-screen font-bold">
+         <Bars className="w-full justify-center" />
+       </h1>
+     </div>
+     );
+   }
   
   return (
     <div className="p-4">
