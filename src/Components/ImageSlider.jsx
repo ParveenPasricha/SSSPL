@@ -4,32 +4,38 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Helmet } from 'react-helmet';
 
-// Custom arrow components
 const PrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full z-10"
+    className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 md:p-3 rounded-full z-10"
   >
-    <img src='https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Red_Arrow_Head_Right-2-512.png' className='w-8 h-8 rotate-180' />
+    <img
+      src="https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Red_Arrow_Head_Right-2-512.png"
+      className="w-6 h-6 md:w-8 md:h-8 rotate-180"
+      alt="Previous"
+    />
   </button>
 );
 
 const NextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute right-4 top-1/2 transform -translate-y-1/2  bg-black bg-opacity-50 text-white p-3 rounded-full z-10"
+    className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 md:p-3 rounded-full z-10"
   >
-    <img src='https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Red_Arrow_Head_Right-2-512.png' className='w-8 h-8 hover:none' />
+    <img
+      src="https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Red_Arrow_Head_Right-2-512.png"
+      className="w-6 h-6 md:w-8 md:h-8"
+      alt="Next"
+    />
   </button>
 );
 
 const ImageSlider = () => {
   const images = [
     "https://media.istockphoto.com/id/1252816967/photo/solar-panel-green-energy-efficiency-for-house-roof.jpg?s=612x612&w=0&k=20&c=-v5mQB2kBhSG-HqWtDWCCCyE46aKOKQ34P52zzam8wA=",
-    'https://www.susolartech.com/images1/15%20kw%20spp%20installed%20at%20sutlej%20public%20school,%20banga%20(pb)%20pic1.png',
-    'https://media.istockphoto.com/id/2137937205/photo/indian-worker-installing-solar-panels-on-roof-of-house-maintenance-of-photovoltaic-panel.jpg?s=612x612&w=0&k=20&c=EqdLVCyE0Jqa0kfTvdAK0nxFyurBLmRcpuliphRosdw=',
-    'https://static.bangkokpost.com/media/content/20240504/c1_2786670_240504112129_700.jpg',
-    ''
+    "https://www.susolartech.com/images1/15%20kw%20spp%20installed%20at%20sutlej%20public%20school,%20banga%20(pb)%20pic1.png",
+    "https://media.istockphoto.com/id/2137937205/photo/indian-worker-installing-solar-panels-on-roof-of-house-maintenance-of-photovoltaic-panel.jpg?s=612x612&w=0&k=20&c=EqdLVCyE0Jqa0kfTvdAK0nxFyurBLmRcpuliphRosdw=",
+    "https://static.bangkokpost.com/media/content/20240504/c1_2786670_240504112129_700.jpg",
   ];
 
   const settings = {
@@ -46,7 +52,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="w-screen h-screen relative overflow-hidden">
+    <div className="w-full h-[100vh] relative overflow-hidden">
       <Helmet>
         <title>Solar Water Heating System - SSSPL</title>
         <meta
@@ -61,11 +67,11 @@ const ImageSlider = () => {
 
       <Slider {...settings}>
         {images.map((src, index) => (
-          <div key={index} className='p-20'>
+          <div key={index} className='p-0 lg:p-20'>
             <img
               src={src}
               alt={`Slide ${index + 1}`}
-              className="w-screen h-screen object-cover"
+              className="w-full h-[100vh] object-cover max-h-screen"
             />
           </div>
         ))}
