@@ -13,7 +13,7 @@ const Header = ({ isLoggedIn, handleLogout }) => {
     Inquiry: '/inquiry',
     'Contact Us': '/contact',
     'Photo Gallery': '/gallery',
-    Testimonial: '/testimonial',
+    Testimonials: '/testimonial',
     // Admin: '/admin',
   };
 

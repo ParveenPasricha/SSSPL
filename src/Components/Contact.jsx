@@ -21,11 +21,11 @@ const Contact = () => {
           <div className="flex gap-4 mt-6">
             {/* Social Media Icons */}
             {[
-              { icon: <FaFacebookF />, bg: 'bg-blue-600', link: 'https://facebook.com' },
-              { icon: <FaInstagram />, bg: 'bg-pink-500', link: 'https://instagram.com' },
-              { icon: <FaTwitter />, bg: 'bg-black', link: 'https://twitter.com' },  
-              { icon: <FaLinkedinIn />, bg: 'bg-blue-700', link: 'https://linkedin.com' },
-              { icon: <FaYoutube />, bg: 'bg-red-600', link: 'https://youtube.com' }
+              { icon: <FaFacebookF />, bg: 'bg-blue-600', link: 'http://facebook.com/susolartechsystems/' },
+              { icon: <FaInstagram />, bg: 'bg-pink-500', link: 'https://instagram.com/susolartechsystems/' },
+              { icon: <FaTwitter />, bg: 'bg-black', link: 'https://x.com/susolartechsystems/' },  
+              { icon: <FaLinkedinIn />, bg: 'bg-blue-700', link: 'https://in.linkedin.com/in/harinder-jain-a15b6720' },
+              { icon: <FaYoutube />, bg: 'bg-red-600', link: 'https://www.youtube.com/@SuSolartechSystemsPvtLtd' }
             ].map((item, index) => (
               <a
                 key={index}
