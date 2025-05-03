@@ -39,7 +39,7 @@ const About = () => {
           <FaCheckCircle className="inline text-green-500 mr-2" />
           <strong>Su Solartech Systems Private Limited (SSSPL)</strong> is a
           leading solar energy products manufacturer based in Chandigarh, India.
-          We're MNRE (GOI) approved, NSIC & DGS&D registered, and empanelled
+          We're MNRE (GOI) approved,MSME, NSIC,  & GeM Registered, and empanelled
           with DRDO, DGMAP, MES, and other premier institutions.
         </p>
 
