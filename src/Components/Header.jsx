@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom'; 
 import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -28,7 +29,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 shadow-md px-4 sm:px-6 md:px-12 py-4">
+    <header className="sticky top-0 z-50 shadow-md px-4 sm:px-6 md:px-12 py-4 bg-white">
       {/* Top Bar for Mobile */}
       <div className="flex justify-between items-center sm:mb-4">
         <Link
@@ -80,7 +81,10 @@ const Header = () => {
               navigate(path);
               setMenuOpen(false);
             }}
-            className="bg-white text-sm sm:text-base hover:text-white font-semibold px-4 py-2 rounded-full shadow hover:bg-blue-600 transition-all duration-200"
+            className={`text-sm sm:text-base font-semibold px-4 py-2 rounded-full shadow transition-all duration-200
+              ${location.pathname === path
+                ? 'bg-orange-500 text-white'
+                : 'bg-white text-black hover:bg-blue-600 hover:text-white'}`}
           >
             {label}
           </button>
