@@ -14,6 +14,7 @@ import Footer from './Components/Footer';
 import NotFound from './Components/NotFound';
 import Media from './Components/Media';
 import ScrollToTop from './Components/ScrollToTop';
+import ProductDetail from './Components/ProductDetail';
 // import Admin from './Components/Admin';
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/" element={<><ImageSlider/><Media/></>} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/price-list" element={<PriceList />} />
         <Route path="/clientele" element={<Clientele />} />
         <Route path="/contact" element={<Contact />} />
