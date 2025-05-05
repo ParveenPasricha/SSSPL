@@ -12,6 +12,8 @@ import Inquiry from './Components/Inquiry';
 import Testimonial from './Components/Testimonial';
 import Footer from './Components/Footer';
 import NotFound from './Components/NotFound';
+import HeroHeader from './Components/HeroHeader';
+import Media from './Components/Media';
 // import Admin from './Components/Admin';
 
 const App = () => {
@@ -31,9 +33,9 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <Header isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
+      <Header />
       <Routes>
-        <Route path="/" element={<ImageSlider />} />
+        <Route path="/" element={<><ImageSlider/><Media/></>} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/price-list" element={<PriceList />} />
