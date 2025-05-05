@@ -64,11 +64,11 @@ const About = () => {
 
       <section className="space-y-6 text-lg text-gray-800 leading-relaxed">
         {[
-          `Su Solartech Systems Private Limited (SSSPL) is a leading solar energy products manufacturer based in Chandigarh, India. We're MNRE (GOI) approved, MSME, NSIC, & GeM Registered, and empanelled with DRDO, DGMAP, MES, and other premier institutions.`,
+          `Su Solartech Systems Private Limited (SSSPL) is a leading solar energy products manufacturer based in Chandigarh, India. We're MNRE (GOI) approved, MSME,PM Surya Ghar & GeM Registered, and empanelled with DRDO, DGMAP, MES, and other premier institutions.`,
           `Founded by Er. Harinder Jain, our ISO 9001:2015 certified company designs and supplies Solar Photovoltaic Systems, Solar Water Heaters, Solar Thermal Systems, Wind Generators, and complete Solar Power Plants.`,
           `Since 1985, Solartech Group has been exporting high-quality solar products worldwide and supplying to government agencies, industries, defense, railways, and more.`,
           `All products, including SPV and Solar Water Heating Systems, are tested and certified by MNRE-approved labs like Solar Energy Centre, ETDC, SPRERI, and follow IEC 61215 standards.`,
-          `Customers benefit from up to 30% MNRE subsidy and 80% depreciation in income tax. The investment cost is often recovered within 2–5 years due to energy savings.`
+          `Customers benefit from up to 30% MNRE subsidy and depreciation in income tax. The investment cost is often recovered within 2–5 years due to energy savings.`
         ].map((text, i) => (
           <motion.p key={i} variants={fadeUp} custom={i + 2}>
             <FaCheckCircle className="inline text-green-500 mr-2" />
