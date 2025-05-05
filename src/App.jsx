@@ -12,12 +12,11 @@ import Inquiry from './Components/Inquiry';
 import Testimonial from './Components/Testimonial';
 import Footer from './Components/Footer';
 import NotFound from './Components/NotFound';
-import HeroHeader from './Components/HeroHeader';
 import Media from './Components/Media';
+import ScrollToTop from './Components/ScrollToTop';
 // import Admin from './Components/Admin';
 
 const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     const savedLogin = localStorage.getItem('isLoggedIn');
@@ -26,14 +25,10 @@ const App = () => {
     }
   }, []);
 
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-    localStorage.removeItem('isLoggedIn');
-  };
-
   return (
     <BrowserRouter>
-      <Header />
+      <Header/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<><ImageSlider/><Media/></>} />
         <Route path="/about" element={<About />} />
