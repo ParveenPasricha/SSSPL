@@ -445,7 +445,7 @@ const Products = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12">
+    <div className="max-w-7xl mx-auto px-6 py-12 bg-gradient-to-tr from-green-500 to-red-200">
       <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center text-black-600 mb-8">
         Solar Products
       </h1>
