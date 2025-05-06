@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useToaster } from "react-hot-toast";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Footer = () => {
   const { toast } = useToaster();
