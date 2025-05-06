@@ -29,27 +29,25 @@ const Footer = () => {
     return () => document.body.removeChild(script);
   }, []);
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = async (e) => {
     e.preventDefault();
     const email = new FormData(e.target).get("email");
-
+  
     if (!email) {
-      toast({
-        title: "Error",
-        description: "Please enter your email address.",
-        variant: "destructive",
-      });
+      toast.error("Please enter your email address.");
       return;
     }
-
-    toast({
-      title: "Success!",
-      description: "You've been subscribed to our newsletter.",
-    });
-
-    e.target.reset();
+  
+    try {
+      await axios.post("https://your-backend.com/api/subscribe", { email });
+      toast.success("You've been subscribed to our newsletter.");
+      e.target.reset();
+    } catch (error) {
+      console.error("Subscription failed:", error);
+      toast.error("Failed to subscribe. Please try again.");
+    }
   };
-
+  
   return (
   <footer className="bg-blue-100 text-black pt-16 pb-8">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
