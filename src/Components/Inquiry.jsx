@@ -27,7 +27,7 @@ const Inquiry = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://backendssspl.onrender.com", formData);
+      await axios.post("https://backendssspl.onrender.com/inquiry", formData);
       alert("Inquiry submitted successfully!");
     } catch (error) {
       console.error(error);
