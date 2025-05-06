@@ -41,13 +41,16 @@ const Footer = () => {
   
     try {
       await axios.post("https://backendssspl.onrender.com/api/subscribe", { email });
-      toast.success("You've been subscribed to our newsletter.");
-      e.target.reset();
+      alert("Subscription successful!");
     } catch (error) {
-      console.error("Subscription failed:", error);
-      toast.error("Failed to subscribe. Please try again.");
+      if (error.response?.status === 409) {
+        alert("You are already subscribed.");
+      } else {
+        alert("Subscription failed. Please try again later.");
+        console.error(error);
+      }
     }
-  };
+}
   
   return (
   <footer className="bg-blue-100 text-black pt-16 pb-8">
