@@ -88,7 +88,7 @@ const Footer = () => {
                 {
                   icon: <FaTwitter />,
                   bg: "bg-sky-500",
-                  link: "https://x.com/susolartechsystems/",
+                  link: "https://x.com/jain_harinder?s=09",
                   label: "Twitter",
                 },
                 {
