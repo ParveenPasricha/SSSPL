@@ -15,7 +15,7 @@ const ProductDetail = () => {
     <div className="max-w-4xl mx-auto p-6">
       <button
         onClick={() => navigate(-1)}
-        className="mb-4 text-blue-500 hover:underline"
+        className="mb-4 text-white font-bold p-2 fixed bg-blue-500 hover:underline"
       >
         ← Back
       </button>

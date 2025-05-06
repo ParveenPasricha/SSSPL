@@ -13,7 +13,6 @@ const Products = () => {
     return () => clearTimeout(timer);
   }, []);
 
-
   if (loading) {
     return (
       <div className="bg-black z-10 w-full h-screen flex justify-center items-center">
@@ -24,6 +23,7 @@ const Products = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
+      {/* Background Image */}
       <div
         className="fixed inset-0 -z-10 bg-repeat-y bg-cover opacity-50"
         style={{
@@ -33,32 +33,31 @@ const Products = () => {
           backgroundPosition: "center",
         }}
       ></div>
-      <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center text-black-600 mb-8">
+
+      {/* Heading */}
+      <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center text-black mb-8">
         Solar Products
       </h1>
 
       {/* Products Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
         {products.map((product) => (
-          <Link to={`/product/${product.id}`}>
-          <div
-            key={product.id}
-            className="bg-white hover:scale-110 hover:opacity-80 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
-          >
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-72 object-contain rounded-lg mb-4 bg-gray-100"
-            />
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">
-              {Array.isArray(product.name)
-                ? product.name.join("")
-                : product.name}
-            </h3>
-            <p className="text-base text-gray-700 mb-4">
-              {product.description}
-            </p>
-          </div>
+          <Link to={`/product/${product.id}`} key={product.id}>
+            <div className="bg-white flex flex-col justify-between p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 hover:opacity-90 transition duration-300 ease-in-out h-full">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-60 object-contain rounded-lg mb-4 bg-gray-100"
+              />
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                {Array.isArray(product.name)
+                  ? product.name.join("")
+                  : product.name}
+              </h3>
+              <p className="text-base text-gray-700">
+                {product.description}
+              </p>
+            </div>
           </Link>
         ))}
       </div>

@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 const mediaItems = [
   {
-    img: 'https://www.tatapowersolar.com/wp-content/uploads/2023/10/03115532/coverage-report-03-10-2023.jpg',
+    img: 'https://www.shutterstock.com/image-photo/solar-panels-on-sky-background-260nw-1696361656.jpg',
     date: 'April 23, 2025',
-    title: 'Tata Power Renewable ties up with Tata Motors',
+    title: 'Su Solartech Power Renewable',
     desc: 'Ties up to set up 131 MW Wind-Solar hybrid Project',
   },
   {
@@ -26,9 +26,9 @@ const mediaItems = [
     title: 'Floating Solar Power in Madhya Pradesh',
     desc: 'Largest floating solar project commissioned in Omkareshwar.',
   },{
-    img: 'https://www.tatapowersolar.com/wp-content/uploads/2023/10/03115532/coverage-report-03-10-2023.jpg',
+    img: 'https://www.shutterstock.com/image-photo/solar-panels-on-sky-background-260nw-1696361656.jpg',
     date: 'April 23, 2025',
-    title: 'Tata Power Renewable ties up with Tata Motors',
+    title: 'Su Solartech Power Renewable',
     desc: 'Ties up to set up 131 MW Wind-Solar hybrid Project',
   },
   {
@@ -48,7 +48,7 @@ const mediaItems = [
     date: 'February 13, 2025',
     title: 'Floating Solar Power in Madhya Pradesh',
     desc: 'Largest floating solar project commissioned in Omkareshwar.',
-  },
+  }
 ];
 
 const Media = () => {
