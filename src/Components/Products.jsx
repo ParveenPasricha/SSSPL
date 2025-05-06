@@ -55,7 +55,30 @@ const Products = () => {
                   : product.name}
               </h3>
               <p className="text-base text-gray-700">
-                {product.description}
+              {/* {Array.isArray(product.description)
+    ? product.description[0].length > 10
+      ? `${product.description[0].substring(0, 20)}...more`
+      : product.description[0]
+    : product.description.length > 10
+      ? `${product.description.substring(0, 10)}...more`
+      : product.description} */}
+      {Array.isArray(product.description)
+    ? product.description[0].length > 10 ? (
+        <>
+          {product.description[0].substring(0, 20)}
+          <span className="text-blue-600 font-semibold">...more</span>
+        </>
+      ) : (
+        product.description[0]
+      )
+    : product.description.length > 10? (
+        <>
+          {product.description.substring(0, 20)}
+          <span className="text-blue-600 font-semibold">...more</span>
+        </>
+      ) : (
+        product.description
+      )}
               </p>
             </div>
           </Link>

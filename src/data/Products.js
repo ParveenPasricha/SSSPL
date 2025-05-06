@@ -5,23 +5,26 @@ const products = [
       image:
         "https://lh3.googleusercontent.com/p/AF1QipNGjGw5SoIyLXCiHMMwEmfx49wMfmmMCOBvtG-L=s680-w680-h510-rw",
       description:
-        "State-of-the-art Solar Power Plant solutions designed for residential and commercial establishments.",
+        "Solar Power Plants offer a clean, renewable energy source, helping to combat climate change while reducing energy costs.",
       category: ["All", "Popular", "Commercial", "Residential"],
     },
     {
       id: 2,
       name: ["Solartech Water Heating System- ", "FPC & ETC Type"],
       image: "https://i.ibb.co/0y2WsZp6/swh-500x500.jpg",
-      description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+      description:[
+      "Solartech Water Heating System provides hot water using clean solar energy, reducing your electricity bills.",
+      "Available in FPC & ETC types to suit various climate conditions and usage needs."],
       category: "Commercial",
     },
     {
       id: 3,
       name: "Solartech LED Street Light ",
       image: "https://i.ibb.co/q3MxmhM9/123.jpg",
-      description:
-        "Tailored solar power plants that maximize energy production and reduce long-term energy costs.",
+      description:[
+        "Solartech LED Street Lights offer energy-efficient, high-brightness lighting powered entirely by solar energy.",
+        "Ideal for streets, parks, and campuses—easy to install, low maintenance, and eco-friendly."
+      ],
       category: ["All", "Popular", "Commercial", "Residential"],
     },
     {
@@ -29,7 +32,10 @@ const products = [
       name: "Solartech Distilled Water Still",
       image: "https://3.imimg.com/data3/AH/IB/MY-2045897/stills-500x500.jpg",
       description:
-        "Affordable and reliable solar energy solutions for large-scale installations.",
+      [
+        "Produces high-purity distilled water using solar energy—ideal for labs, clinics, and schools.",
+        "Eco-friendly, low-maintenance system with no need for electricity or chemicals."
+      ],
       category: "Commercial",
     },
     {
@@ -37,7 +43,10 @@ const products = [
       name: "Solartech Hand Held Lantern/ Emergency Light",
       image: "https://i.ibb.co/d0LD3Rwy/Lamp-I.jpg",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+      [
+        "Portable solar-powered lantern ideal for emergencies, camping, and off-grid use.",
+        "Features dual charging (solar + USB), long battery life, and durable build."
+      ],
       category: "Residential",
     },
     {
@@ -45,7 +54,10 @@ const products = [
       name: "Solartech Box Type Cookers & Dish Type Cookers",
       image: "https://i.ibb.co/G4WVPWXX/cooker-removebg-preview-2.png",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+      [
+        "Eco-friendly solar cookers designed for fuel-free outdoor cooking.",
+        "Efficient, safe, and ideal for homes, schools, and rural areas."
+      ],
       category: "Residential",
     },
     {
@@ -53,7 +65,10 @@ const products = [
       name: "Solartech Cabinet Drier",
       image: "https://i.ibb.co/hx2Gbrjc/drier-removebg-preview.png",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+      [
+        "Solar-powered drying cabinet ideal for food, herbs, and grains.",
+        "Energy-efficient, hygienic, and eco-friendly solution for small-scale drying."
+      ],
       category: "Commercial",
     },
     {
@@ -62,7 +77,10 @@ const products = [
       image:
         "https://5.imimg.com/data5/OU/SA/KI/SELLER-17469105/solar-home-light-system.jpg",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+      [
+        "Reliable solar-powered lighting solution for homes and indoor use.",
+        "Offers bright, energy-efficient light even in power outages."
+      ],
       category: ["Popular", "Commercial", "Residential"],
     },
     {
@@ -71,7 +89,7 @@ const products = [
       image:
         "https://5.imimg.com/data5/SELLER/Default/2022/7/UD/FK/IL/803113/solar-blinker-250x250.jpg",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+        "Solartech Blinker Light is a solar-powered traffic signal with high-visibility LEDs, ideal for road safety. It operates without external power.",
       category: ["Popular", "Commercial", "Residential"],
     },
     {
@@ -80,7 +98,7 @@ const products = [
       image:
         "https://3.imimg.com/data3/TU/FD/MY-14922728/solar-garden-lights-250x250.jpg",
       description:
-        "Highly efficient solar plants designed to meet both residential and commercial energy needs.",
+        "Solartech Garden Lights are solar-powered outdoor lights that provide eco-friendly illumination for gardens and pathways. They charge during the day and automatically light up at night without needing external power.",
       category: ["All", "Popular", "Commercial", "Residential"],
     },
     {
@@ -88,7 +106,7 @@ const products = [
       name: "Solartech Pump",
       image: "https://samsonsolar.in/img/s9.jpg",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+        "Solartech Pumps are solar-powered water pumping systems designed for irrigation, water supply, and various other applications. They operate efficiently using solar energy, reducing reliance on conventional power sources.",
       category: ["All", "Popular", "Commercial", "Residential"],
     },
     {
@@ -97,7 +115,7 @@ const products = [
       image:
         "https://3.imimg.com/data3/IX/UU/MY-2045897/stand-by-power-supply-250x250.jpg",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+        "Solartech Power Pack/UPS & Inverter provides reliable backup power by integrating solar energy with grid power. It ensures uninterrupted power supply during outages, supporting both residential and commercial applications.",
       category: ["All", "Popular", "Commercial", "Residential"],
     },
     {
@@ -106,7 +124,7 @@ const products = [
       image:
         "https://m.media-amazon.com/images/I/719ZPc6naYL._AC_UF1000,1000_QL80_.jpg",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+        "The Solartech Hand Held Rechargeable Torch is a solar-powered flashlight with both solar and AC charging options. It offers reliable, portable illumination for emergencies and outdoor use.",
       category: ["All", "Popular", "Commercial", "Residential"],
     },
     {
@@ -115,7 +133,7 @@ const products = [
       image:
         "https://m.media-amazon.com/images/I/713YNQwvmjL._AC_UF1000,1000_QL80_.jpg",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+        "The Solartech Portable Battery Charger is a solar-powered power bank with dual USB ports and a built-in flashlight. It's perfect for charging devices outdoors or during emergencies.",
       category: ["All", "Popular", "Commercial", "Residential"],
     },
     {
@@ -124,7 +142,7 @@ const products = [
       image:
         "https://5.imimg.com/data5/UH/NX/MY-5465059/solar-search-light-500x500.jpg",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+        "The Solartech Hand Held Search/Dragon Light is a rugged, solar-powered searchlight ideal for outdoor and emergency use. It offers both solar and AC charging options with remote control functionality for added convenience.",
       category: ["All", "Popular", "Commercial", "Residential"],
     },
     {
@@ -133,7 +151,7 @@ const products = [
       image:
         "https://www.suryashakti.biz/images/products_clip_image001_0007.jpg",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+        "The Solartech Hand Held Metal Detector is a high-sensitivity device designed to detect various metals. It operates on rechargeable or disposable batteries and can be charged via solar or AC power.",
       category: ["All", "Popular", "Commercial"],
     },
     {
@@ -141,7 +159,7 @@ const products = [
       name: "Solartech Door Frame Metal Detector",
       image: "https://magtech.in/wp-content/uploads/2023/10/2.png",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+        "Solartech Door Frame Metal Detector is a security device designed to detect ferrous and non-ferrous metals. It is available in both portable and wooden frame options, suitable for various security applications.",
       category: ["All", "Popular", "Commercial"],
     },
     {
@@ -150,7 +168,7 @@ const products = [
       image:
         "https://www.dial4trade.com/uploaded_files/product_images/underviewing-vehicle-mirror-trolley-1225526.jpg",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+        "Solartech Under Vehicle Mirror Trolley is a robust security tool designed for inspecting the undersides of vehicles. It features a large unbreakable mirror mounted on a wheeled trolley, ensuring thorough and efficient vehicle searches.",
       category: ["All", "Commercial"],
     },
     {
@@ -159,7 +177,7 @@ const products = [
       image:
         "https://5.imimg.com/data5/SELLER/Default/2021/6/JC/MJ/YF/86054066/solartech-ir-with-hooter-halogen-light-250x250.PNG",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+        "The Solartech IR Sensor is an infrared sensor used for detecting suspended solids and turbidity in various applications. It operates using a 950 nm infrared LED for precise measurements.",
       category: ["All", "Popular", "Commercial", "Residential"],
     },
     {
@@ -167,7 +185,7 @@ const products = [
       name: "Solartech Traffic Lights",
       image: "https://i.ibb.co/67KSf3Qk/2022-04-14-removebg-preview.png",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+        "Solartech Traffic Lights with blinkers are solar-powered devices designed for traffic management. They use energy-efficient LEDs for clear visibility and operate autonomously, reducing energy costs.",
       category: ["All", "Commercial"],
     },
     {
@@ -176,7 +194,7 @@ const products = [
       image:
         "https://image.made-in-china.com/2f0j00LSpTwFsClZbE/1kw-2kw-3kw-5kw-Wind-Solar-Home-Hybrid-System.webp",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+        "The Solartech Wind Electric Generator & PV Wind Hybrid System combines wind and solar power to provide reliable, continuous energy. It includes energy storage and a hybrid controller for efficient power management.",
       category: ["All", "Popular", "Commercial"],
     },
     {
@@ -193,7 +211,7 @@ const products = [
       image:
         "https://www.solarpartscomponents.com/wp-content/uploads/2018/06/Solar-Panel-Parts-Components-Accessories.jpg",
       description:
-        "Customized solar solutions designed to deliver high performance and energy savings.",
+        "Solartech Systems Parts & Spares provide essential components for maintaining and repairing solar energy systems. These parts ensure the efficiency and longevity of solar installations for both residential and industrial use.",
       category: ["All", "Popular", "Commercial", "Residential"],
     },
   ];
